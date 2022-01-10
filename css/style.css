@@ -1,0 +1,21 @@
+body {
+	background-color: black;
+	color: red;
+	font-family: 'Be Vietnam Pro', sans-serif;;
+}
+
+a {
+	color:  purple;
+	font-family: 'Luxurious Roman', cursive;
+}
+
+h1 {
+	color:  blue;
+	font-family: 'Luxurious Roman', cursive;
+}
+
+p {
+	font-size:  13px;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	color: white;
+}
