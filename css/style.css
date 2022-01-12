@@ -1,12 +1,147 @@
 body {
-	background-color: black;
+	background-color: grey;
 	color: red;
-	font-family: 'Be Vietnam Pro', sans-serif;;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	align-items: center;
 }
 
 a {
-	color:  purple;
-	font-family: 'Luxurious Roman', cursive;
+	color:  red;
+	font-size: 13px;
+	font-family: 'Helvetica', cursive;
+	text-decoration: underline;
+	transition:800ms ease all;
+}
+
+/*change color when you hover */
+a:hover{
+	color: blue;
+	/*adding a smooth transition when hovering over an element*/
+	transition:800ms ease all;
+}
+
+/*creating a header, used once so ID*/
+#header{
+	width: 100%;
+	display: flex; /*elements in smae line and row*/
+	justify-content: space-between; /*elements on either side of container*/
+	background-color: transparent;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: fixed;
+	border: 1px solid black;
+}
+
+/*creating a button for a resume*/
+.resume-button{
+	color: black;
+	font-family: 'Helvetica';
+	font-weight: 400; /*lighter version NOT bolded font*/
+	letter-spacing: 1px; /*certain amount of space*/
+	border-radius: 25px; /*curved radius around the button*/
+	border:  1px solid black;
+	background-color: transparent;
+	width: 200px;
+	height: 50px;
+	transition:800ms ease all;
+	margin-top: 10px;
+	margin-right: 5%;
+}
+
+/*button hover, transfers over all of the specifications in the class*/
+.resume-button:hover{
+	color: white;
+	background-color: black;
+	transition:800ms ease all;
+}
+
+/*makes any links in the resume button to have this specifications*/
+.resume-button a{
+	color: blue;
+}
+
+/*specifiy specifically the link color change when hover*/
+.resume-button a:hover{
+	color:  white;
+	transition:800ms ease all;
+}
+
+/*making stuff in a row*/
+#container{
+	width: 100%;
+	padding: 2% 7% 0% 7%;
+	height: 40%;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.column-left{
+	margin-right: 20px;
+	float: left;
+	width: 30%;
+	height: 100px;
+	border-radius: 20px; 
+	font-size: 14px;
+	padding: 3%; /*for all sides 3%*/
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+.column-left:hover{
+	transform:  scale(1,1);
+	-webkit-box-shadow: 0px 0px 36px 4px red;
+	box-shadow: 0px 0px 36px 4px grey;
+	transition:800ms ease all;
+}
+
+.column-middle{
+	margin-right: 20px;
+	width: 23%;
+	height: 100px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 3%;
+	background-color: blue;
+
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+.column-middle:hover{
+	transform:  scale(1,1);
+	-webkit-box-shadow: 0px 0px 36px 4px red;
+	box-shadow: 0px 0px 36px 4px grey;
+	transition:800ms ease all;
+
+}
+
+.column-right{
+	float: right;
+	width: 23%;
+	height: 100px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 3%;
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+.column-right:hover{
+	transform:  scale(1,1);
+	-webkit-box-shadow: 0px 0px 36px 4px red; /*same format for padding
+	top, right, bottom, left*/
+	box-shadow: 0px 0px 36px 4px grey;
+	transition:800ms ease all;
+
+}
+
+.container-img{
+	display: flex-end;
+	border: 1px solid pink;
+}
+
+.container-text{
+	border:  1px solid black;
 }
 
 h1 {
@@ -17,5 +152,46 @@ h1 {
 p {
 	font-size:  13px;
 	font-family: 'Be Vietnam Pro', sans-serif;
-	color: white;
+	color: black;
 }
+
+#bioNlinks{
+	width: 100%;
+	padding: 0% 0% 0% 0%; /*padding-top, padding-right, padding-bottom, padding-left */
+	/*why no margin from the right hand side and why does it make the page
+	scroll??*/
+
+	/*align-items: center;*/
+	/*text-align: center;*/
+	margin-top: 100px;
+}
+
+.bioBox{
+	line-height: 24px;
+	background-color: green;
+	align-items: left;
+	text-align: center;
+	border: 1px solid white;
+}
+
+.linkBox{
+	size: ;
+	background-color: white;
+	align-items: center;
+	text-align: center;
+
+	margin-left: 45%;
+	margin-right: 45%;
+
+}
+
+/*when you change the tab size to these pixels it would transform 
+the button to these specifiations 
+@media screen and (min-width: 780px){ /*describes tablet size and half webpage
+.resume-button{ 
+	width: 20px;
+	height: 10px;
+	transition:800ms ease all;
+	
+}*/
+
