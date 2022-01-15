@@ -16,6 +16,8 @@
 		<title> Diego's Portfolio </title> <!--shows up in the tab title aka meta info-->
 		<!-- line of code to make it responsive-->
 		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://unpkg.com/scrollreveal"></script>
+
 	</head>
 
 	<body>
@@ -31,9 +33,9 @@
 					<!-- a target="_blank" makes the link open in a new website-->
 					<button class="connectButton"><a target="_blank" href="https://www.linkedin.com/in/diegolazala21/">Connect On LinkedIn!</a></button>
 				</div>
-				<a target="_blank" href="twitter.com"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" height="50px" width="50px"></a>
+				<a target="_blank" href="https://www.instagram.com/diegowrl/"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" height="50px" width="50px"></a>
 
-				<a target="_blank" href="https://www.instagram.com/diegowrl/"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" height="50px" width="50px"></a>
+				<a target="_blank" href="https://github.com/dwr2118/dwr2118.github.com"><img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" height="50px" width="50px"></a>
 
 				<a target="_blank" href="mailto: drlazala@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" height="50px" width="50px"></a>
 			</div>
@@ -58,14 +60,14 @@
 			</div>
 		</div>
 		
-		<div id="Portfolio">
+		<div class="Portfolio">
 			<h2>Things That Make Me Interesting</h2>
 			<div class="PortfolioBio">
 				<div class="PortfolioPicture">
 					<img src="https://nexleveltax.com/wp-content/uploads/2021/01/nexlevel.png" alt="logo of NexLevelTax Planning LLC">
 				</div>
 				<div class="PortfolioDescription">
-					<p>Accounting Associate</p>
+					<p class="ActivityTitle"><strong>Accounting Associate </strong>(Oct. 2018 - Present)</p>
 					<ul>
 						<li>Participating in bookkeeping for Hispanic-serving businesses</li>
 						<li>Training in entry-level use of QuickBooks Online</li>
@@ -78,18 +80,48 @@
 					<img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFxn78nvVaTDA/company-logo_100_100/0/1599911757575?e=1650499200&v=beta&t=HjmhKLz6GZKoCd455NXHFhiJM07-jtQrK2mAUWwjrxA" alt="Columbia University logo">
 				</div>
 				<div class="PortfolioDescription">
-					<p>J.A.D.E Participant</p>
+					<p class="ActivityTitle"><strong>J.A.D.E Participant</strong> (Jan. 2022 - Jan. 2022)</p>
 					<ul>
 						<li>A selective week-long tech immersion program in NYC startup ecosystem for first-year students.</li>
 						<li>Had discussions with executives, venture capital investors, product managers, and software engineers.</li><li>Learned Web Development through HTML, CSS, Javascript, and Github and launched website.</li>
 					</ul>
 				</div>
-
-			</div>	
-			<p>just some text to check</p>
-
+			</div>
 		</div>
 
+		<div id="Portfolio">
+			<div id="ScrollingPort">
+				<h2>Projects</h2>
+			
+				
+				<script>
+					function openProject(){
+						var iframe = $("#MarketProject");
+	   					iframe.attr("src", iframe.data("src"));
+					}
+				</script>
+
+				
+				<button id="openProject" onClick="openProject()"><p>Click Here To Find Local Markets</p></button>
+					<iframe id="MarketProject" frameborder="0px" width="85%" height="500px" data-src="https://replit.com/@dwr2118/LocalMarkets?embed=true" src="about:blank"></iframe>
+
+				
+				<script>
+					function openProject(){
+						var iframe = $("#PokerProject");
+	   					iframe.attr("src", iframe.data("src"));
+					}
+				</script>
+
+				
+				<button id="openProject" onClick="openProject()"><p>Click Here To Play Poker</p></button>
+					<iframe id="MarketProject" frameborder="0px" width="85%" height="500px" data-src="https://replit.com/@dwr2118/Poker-GroupExercise-4?embed=true" src="about:blank"></iframe>
+			</div>
+		</div>
+
+		<script>
+			Scroll.Reveal().reveal('#openProject');
+		</script>
 
 
 

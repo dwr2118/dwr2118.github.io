@@ -246,13 +246,14 @@ p {
 }
 
 #Portfolio{
-	justify-content: left
+	justify-content: left;
 }
 
 .PortfolioBio{
 	display: inline-flex;
 	width: 100%;
 	margin-bottom: 50px;
+	line-height: 24px;
 }
 
 .PortfolioPicture{
@@ -272,6 +273,14 @@ p {
 	width: 55%;
 	text-align: left;
 	overflow-wrap: break-word;
+}
+
+.ActivityTitle{
+	border-bottom: 1px solid white;
+}
+
+#openProject{
+	background-color: #24a0ed;;
 }
 /*when you change the tab size to these pixels it would transform 
 the button to these specifiations 
