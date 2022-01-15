@@ -5,6 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		
 		<!-- js to html-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="./js/index.js"></script>
 
 		<!--fonts -->
@@ -12,41 +13,56 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Luxurious+Roman&display=swap" rel="stylesheet">
 
-		<title> Tab Title! </title> <!--shows up in the tab title aka meta info-->
+		<title> Diego's Portfolio </title> <!--shows up in the tab title aka meta info-->
 		<!-- line of code to make it responsive-->
 		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
-		<div id="bioNlinks">
+		
 		<div id="header">
-		<h1> Diego Rivas Lazala </h1> 
-		<button class="resume-button"><a href="/">RESUME</a></button>
-		</div><!-- make the font bigger-->
+			<div id="header-text">
+				<h1> Diego Rivas Lazala </h1> 
+			</div>
+			<!--<button class="resume-button"><a href="/">RESUME</a></button>-->
+			<div id="header-icons">
+				
+				<div class="linkBox">
+					<!-- a target="_blank" makes the link open in a new website-->
+					<button class="connectButton"><a target="_blank" href="https://www.linkedin.com/in/diegolazala21/">Connect On LinkedIn!</a></button>
+				</div>
+				<a target="_blank" href="twitter.com"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" height="50px" width="50px"></a>
 
-		<h2>I'm a First Year at Columbia's School of <i>Engineering</i></h2>
+				<a target="_blank" href="https://www.instagram.com/diegowrl/"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" height="50px" width="50px"></a>
+
+				<a target="_blank" href="mailto: drlazala@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" height="50px" width="50px"></a>
+			</div>
+		</div>
 
 		<!-- linking images from online links 
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bucephala-albeola-010.jpg/1200px-Bucephala-albeola-010.jpg">-->
-	
+		<div id="bioNlinks">
 			<div class="bioBox">
 					<p> Welcome to My Website!
 					<br>This is my first ever real attempt at making an HTML file with some CSS styling and hoping to make it janky with some java script.
 
 					</p>
 			</div>	
+			<div class="container-img">
 			<!--images locally--> 
-			<img src="./images/me.jpg" height="300 px"><p>text</p>
-			
+				<img src="./images/me.jpg" alt="picture of Diego Rivas Lazala">
+			</div>
 
 
 		</div>
 
-		<div class="linkBox">
-			<!-- a target="_blank" makes the link open in a new website-->
-			<a target="_blank" href="https://www.linkedin.com/in/diegolazala21/">
-			LinkedIn</a>
-		</div>
+		<!--<button onClick="rotateImg()">Rotate Button</button>
+		<script>
+			function rotateImg(){
+		document.querySelector(".container-img").style.transform = "rotate(45deg)";
+			}
+		</script>-->
+
 
 		<!--container stuff-->
 		<div id="container">
@@ -54,8 +70,12 @@
 			<div class="column-middle">middle column dude stuff!</div>
 			<div class="column-right">right box duddeee</div>	
 		</div> 
-		
+
+		<div class="bigBox">
+			<p>just some text </p>
 		</div>
+
+		
 	
 	</body>
 
