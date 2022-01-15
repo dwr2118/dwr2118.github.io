@@ -1,7 +1,7 @@
 body {
 	background-color: black;
 	color: white;
-	font-family: 'Be Vietnam Pro', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	text-align: center;
 	width: 95%;	
 	overflow: scroll;
@@ -159,14 +159,36 @@ a:hover{
 }
 
 h1 {
-	color:  blue;
-	font-family: 'Luxurious Roman', cursive;
+	color:  white;
+	font-family: 'Roboto Mono', monospace;
+}
+
+h2{
+	text-align: left;
+	width: 75%;
+	margin-left: 15%;
+}
+
+h2:hover{
+	color: black;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: move 45s linear infinite;
+	transition:800ms ease all;
+}
+
+@keyFrames move{
+	to{
+		background-position: 4500vh;
+	}
 }
 
 p {
-	font-size:  13px;
-	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size:  16px;
+	font-family: 'Roboto Mono', monospace;
 	color: white;
+	font-weight: 100;
 }
 
 #bioNlinks{
@@ -182,14 +204,14 @@ p {
 }
 
 .bioBox{
-	width: 70%;
-	margin-left: 10%;
+	/*width: 70%;
+	margin-left: 10%;*/
 	padding-left: 96px;
 	padding-right: 16px;
 	margin-right: 11%;
 
-	line-height: 24px;
-	text-align: center;
+	line-height: 35px;
+	text-align: left;
 }
 
 .container-img{
@@ -199,8 +221,9 @@ p {
 }
 
 .container-img img{
-	width: 100%;
-	height: 100%;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
 
 }
 
@@ -220,6 +243,35 @@ p {
 .bigBox{
 	width: 100%;
 	border: 1px solid pink;
+}
+
+#Portfolio{
+	justify-content: left
+}
+
+.PortfolioBio{
+	display: inline-flex;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.PortfolioPicture{
+	/*border: 1px solid pink;*/
+	width: 32%;
+	padding-left: 20px;
+}
+
+.PortfolioPicture img{
+	/*border: 1px solid pink;*/
+	height: 100%;
+	max-width: 450px;}
+
+
+.PortfolioDescription{
+	/*border: 1px solid pink;*/
+	width: 55%;
+	text-align: left;
+	overflow-wrap: break-word;
 }
 /*when you change the tab size to these pixels it would transform 
 the button to these specifiations 
