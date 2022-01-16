@@ -280,8 +280,10 @@ p {
 }
 
 #openProject{
-	background-color: #24a0ed;;
+	background-color: #24a0ed;
+	border-radius: 10px;
 }
+
 /*when you change the tab size to these pixels it would transform 
 the button to these specifiations 
 @media screen and (min-width: 780px){ /*describes tablet size and half webpage
