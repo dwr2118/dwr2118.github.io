@@ -1,137 +1,78 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<!--links your CSS styling to html file-->
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		
-		<!-- js to html-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="./js/index.js"></script>
-
-		<!--fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Luxurious+Roman&family=Roboto+Mono:wght@100;700&display=swap" rel="stylesheet">
-
-		<title> Diego's Portfolio </title> <!--shows up in the tab title aka meta info-->
-		<!-- line of code to make it responsive-->
-		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://unpkg.com/scrollreveal"></script>
-
-	</head>
-
-	<body>
-		
-		<div id="header">
-			<div id="header-text">
-				<h1> Diego Rivas Lazala </h1> 
-			</div>
-			<!--<button class="resume-button"><a href="/">RESUME</a></button>-->
-			<div id="header-icons">
-
-				<div class="linkBox">
-					<!-- a target="_blank" makes the link open in a new website-->
-					<button class="connectButton"><a target="_blank" href="https://www.linkedin.com/in/diegolazala21/">Connect On LinkedIn!</a></button>
-				</div>
-
-				<a target="_blank" href="https://github.com/dwr2118/dwr2118.github.com"><img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" height="50px" width="50px"></a>
-
-				<a target="_blank" href="mailto: drlazala@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" height="50px" width="50px"></a>
-			</div>
-		</div>
-
-		<!-- linking images from online links 
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bucephala-albeola-010.jpg/1200px-Bucephala-albeola-010.jpg">-->
-		<div id="bioNlinks">
-			<div class="bioBox">
-					<p> <h2><center>Welcome to My Website!</center></h2>
-					I'm a first-generation first year undergraduate at Columbia University's School of Engineering & Applied Sciences in the pursuit of a B.S in Engineering adjacent fields.
-					</p>
-
-					<p>
-					I'm interested in applying and expanding my accounting skills as well as exploring the intersection between accounting, engineering & entrepreneurship. 
-
-					</p>
-			</div>	
-			<div class="container-img">
-			<!--images locally--> 
-				<img src="https://i.imgur.com/idtPUD1.jpg" alt="picture of Diego Rivas Lazala">
-			</div>
-		</div>
-		
-		<div class="Portfolio">
-			<h2>Things That Make Me Interesting</h2>
-			<div class="PortfolioBio">
-				<div class="PortfolioPicture">
-					<img src="https://nexleveltax.com/wp-content/uploads/2021/01/nexlevel.png" alt="logo of NexLevelTax Planning LLC">
-				</div>
-				<div class="PortfolioDescription">
-					<p class="ActivityTitle"><strong>Accounting Associate </strong>(Oct. 2020 - Present)</p>
-					<ul>
-						<li>Participating in bookkeeping for Hispanic-serving businesses</li>
-						<li>Training in entry-level use of QuickBooks Online</li>
-					</ul>
-					
-				</div>
-			</div>	
-			<div class="PortfolioBio">
-				<div class="PortfolioPicture">
-					<img src="https://i.imgur.com/6tIz3ke.png" alt="Columbia University logo">
-				</div>
-				<div class="PortfolioDescription">
-					<p class="ActivityTitle"><strong>J.A.D.E Participant</strong> (Jan. 2022 - Jan. 2022)</p>
-					<ul>
-						<li>A selective week-long tech immersion program in NYC startup ecosystem for first-year students.</li>
-						<li>Had discussions with executives, venture capital investors, product managers, and software engineers.</li><li>Learned Web Development through HTML, CSS, Javascript, and Github and launched website.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div id="Portfolio">
-			<div id="ScrollingPort">
-				<h2>Projects (currently work in progress)</h2>
-			
-				
-				
-				
-Tip Calculator: 				
-<br>
-<img src="https://camo.githubusercontent.com/88c8dd97f4475e4e8f69cf1aca96023672cca95c8750ee1ca174d823414ed436/68747470733a2f2f692e696d6775722e636f6d2f686f416c6e387a2e676966" width="20%" height="70%" alt="Tip Calculator gif"><br>
-
-Greeting app:
-
-<br>
-
-
-<img src="https://camo.githubusercontent.com/940ef146c31fb009a6ea840ce847693125fd19f76d5c9658b0c6b324ba1609f4/68747470733a2f2f692e696d6775722e636f6d2f6e586d4b4a6e512e676966" width="20%" height="70%" alt="Greeting App gif">
-<br>
-    
-Flix: Browse Movies from The Movie Database API
-<br>
-<img src="https://i.imgur.com/KGvuoBD.gif" width="20%" height="70%">
-				
-			</div>
-		</div>
-
-
-
-		<!--<button onClick="rotateImg()">Rotate Button</button>
-		<script>
-			function rotateImg(){
-		document.querySelector(".container-img").style.transform = "rotate(45deg)";
-			}
-		</script>-->
-
-
-		<!--container stuff
-		<div id="container">
-			<div class="column-left">hello!</div>
-			<div class="column-middle">middle column dude stuff!</div>
-			<div class="column-right">right box duddeee</div>	
-		</div> -->
-		
-	
-	</body>
-
+<head>
+    <meta charset="UTF-8">
+    <title>To the Power of Math!</title>
+    <!-- Styling for the client UI -->
+    <style>
+    h1 {
+        color: #FFFFFF;
+        font-family: system-ui;
+        margin-left: 20px;
+        }
+    body {
+        background-color: #222629;
+        }
+    label {
+        color: #86C232;
+        font-family: system-ui;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        }
+     button {
+        background-color: #86C232;
+        border-color: #86C232;
+        color: #FFFFFF;
+        font-family: system-ui;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 140px;
+        }
+     input {
+        color: #222629;
+        font-family: system-ui;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+        width: 100px;
+        }
+    </style>
+    <script>
+        // callAPI function that takes the base and exponent numbers as parameters
+        var callAPI = (base,exponent)=>{
+            // instantiate a headers object
+            var myHeaders = new Headers();
+            // add content type header to object
+            myHeaders.append("Content-Type", "application/json");
+            // using built in JSON utility package turn object to string and store in a variable
+            var raw = JSON.stringify({"base":base,"exponent":exponent});
+            // create a JSON object with parameters for API call and store in a variable
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+            // make API call with parameters and use promises to get response
+            fetch("YOUR API GATEWAY ENDPOINT", requestOptions)
+            .then(response => response.text())
+            .then(result => alert(JSON.parse(result).body))
+            .catch(error => console.log('error', error));
+        }
+    </script>
+</head>
+<body>
+    <h1>TO THE POWER OF MATH!</h1>
+    <form>
+        <label>Base number:</label>
+        <input type="text" id="base">
+        <label>...to the power of:</label>
+        <input type="text" id="exponent">
+        <!-- set button onClick method to call function we defined passing input values as parameters -->
+        <button type="button" onclick="callAPI(document.getElementById('base').value,document.getElementById('exponent').value)">CALCULATE</button>
+    </form>
+</body>
 </html>
