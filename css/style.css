@@ -1,296 +1,132 @@
+/* Default dark mode */
 body {
-	background-color: black;
-	color: white;
-	font-family: 'Roboto Mono', monospace;
-	text-align: center;
-	width: 95%;	
-	overflow: scroll;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-	color:  white;
-	font-size: 13px;
-	font-family: 'Helvetica', cursive;
-	transition:800ms ease all;
-	text-decoration: none;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
 }
 
-/*change color when you hover 
-a:hover{
-	color: blue;
-	/*adding a smooth transition when hovering over an element
-	transition:800ms ease all;
-}
-*/
-
-/*creating a header, used once so ID*/
-#header{
-	width: 95%;
-	display: inline-flex; /*elements in smae line and row*/
-	justify-content: space-evenly; /*elements on either side of container*/
-	background-color: black;
-	padding-left: 27px;
-	position: fixed;
-	margin-top: -8px;
-	align-items: center;
-
+.content {
+    width: 75%;
+    padding-left: 20px;
 }
 
-#header-icons{
-	width: 45%;
-	justify-content: flex-end;
-	padding: 0% 8% 0% 0%;
-	display: flex;
-	align-items: center;
+h1, h2, h3 {
+    color: #00ff99;
 }
 
-#header-text{
-	width: 55%;
-	display: flex;
-	justify-content: flex-start;
+p, li {
+    font-size: 1.2em;
 }
 
-/*creating a button for a resume*/
-.resume-button{
-	color: black;
-	font-family: 'Helvetica';
-	font-weight: 400; /*lighter version NOT bolded font*/
-	letter-spacing: 1px; /*certain amount of space*/
-	border-radius: 25px; /*curved radius around the button*/
-	border:  1px solid white;
-	background-color: transparent;
-	width: 200px;
-	height: 50px;
-	transition:800ms ease all;
-	margin-right: 10%;
-	margin-top: 10px;
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #00ff99;
 }
 
-/*button hover, transfers over all of the specifications in the class*/
-.resume-button:hover{
-	color: white;
-	background-color: grey;
-	transition:800ms ease all;
+video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #00ff99;
 }
 
-/*makes any links in the resume button to have this specifications*/
-.resume-button a{
-	color: blue;
+pre {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff99;
+    overflow-x: auto;
 }
 
-/*specifiy specifically the link color change when hover*/
-.resume-button a:hover{
-	color:  white;
-	transition:800ms ease all;
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffcc00;
 }
 
-/*making stuff in a row*/
-#container{
-	width: 95%;
-	padding: 2% 0% 0% 9%;
-	height: 40%;
-	display: inline-flex;
-	flex-direction: row;
+.screenshot {
+    margin-top: 20px;
 }
 
-.column-left{
-	margin-right: 20px;
-	float: left;
-	width: 23%;
-	height: 100px;
-	border-radius: 20px; 
-	font-size: 14px;
-	padding: 3%; /*for all sides 3%*/
-	background-color: transparent;
-	border: 1px solid grey;
+.text-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #00ff99;
 }
 
-.column-left:hover{
-	transform:  scale(1,1);
-	-webkit-box-shadow: 0px 0px 36px 4px grey;
-	box-shadow: 0px 0px 36px 4px grey;
-	transition:800ms ease all;
+.toc-container {
+    width: 25%;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #00ff99;
+    border-radius: 10px;
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    height: auto;
 }
 
-.column-middle{
-	margin-right: 20px;
-	width: 23%;
-	height: 100px;
-	border-radius: 20px;
-	font-size: 14px;
-	padding: 3%;
-	background-color: blue;
-
-	background-color: transparent;
-	border: 1px solid grey;
+.toc-container ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.column-middle:hover{
-	transform:  scale(1,1);
-	-webkit-box-shadow: 0px 0px 36px 4px grey;
-	box-shadow: 0px 0px 36px 4px grey;
-	transition:800ms ease all;
-
+.toc-container li {
+    margin-bottom: 10px;
 }
 
-.column-right{
-	float: right;
-	width: 23%;
-	height: 100px;
-	border-radius: 20px;
-	font-size: 14px;
-	padding: 3%;
-	background-color: transparent;
-	border: 1px solid grey;
+.toc-container a {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 1.1em;
 }
 
-.column-right:hover{
-	transform:  scale(1,1);
-	-webkit-box-shadow: 0px 0px 36px 4px white; /*same format for padding
-	top, right, bottom, left*/
-	box-shadow: 0px 0px 36px 4px white;
-	transition:800ms ease all;
-
+/* Light mode */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-.container-text{
-	max-height: 5%;
-	border:  1px solid black;
+body.light-mode h1, body.light-mode h2, body.light-mode h3 {
+    color: #333;
 }
 
-h1 {
-	color:  white;
-	font-family: 'Roboto Mono', monospace;
+body.light-mode pre {
+    background-color: #ddd;
+    color: #333;
+    border: 1px solid #555;
 }
 
-h2{
-	text-align: left;
-	width: 75%;
-	margin-left: 15%;
+body.light-mode .text-box {
+    background-color: #fff;
+    border: 1px solid #555;
 }
 
-h2:hover{
-	color: black;
-	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: move 45s linear infinite;
-	transition:800ms ease all;
+body.light-mode .toc-container {
+    background-color: #fff;
+    border: 1px solid #555;
 }
 
-@keyFrames move{
-	to{
-		background-position: 4500vh;
-	}
+body.light-mode .toc-container a {
+    color: #007bff;
 }
 
-p {
-	font-size:  16px;
-	font-family: 'Roboto Mono', monospace;
-	color: white;
-	font-weight: 100;
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
-
-#bioNlinks{
-	width: 100%;
-	padding: 7% 0% 0% 0%; /*padding-top, padding-right, padding-bottom, padding-left */
-	/*why no margin from the right hand side and why does it make the page
-	scroll??*/
-
-	/*align-items: center;*/
-	text-align: center;
-	align-items: center;
-	display: inline-flex;
-}
-
-.bioBox{
-	/*width: 70%;
-	margin-left: 10%;*/
-	padding-left: 96px;
-	padding-right: 16px;
-	margin-right: 11%;
-
-	line-height: 35px;
-	text-align: left;
-}
-
-.container-img{
-	width: 50%;
-	margin-right: 13%;
-	overflow: visible;
-}
-
-.container-img img{
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-
-}
-
-.linkBox{
-	margin-right: 10px;
-}
-
-.connectButton{
-	line-height: 26px;
-	border-radius: 25px;
-	background-color: #24a0ed;
-	align-items: center;
-	text-align: center;
-	width: 157px;
-}
-
-.bigBox{
-	width: 100%;
-	border: 1px solid pink;
-}
-
-#Portfolio{
-	justify-content: left;
-}
-
-.PortfolioBio{
-	display: inline-flex;
-	width: 100%;
-	margin-bottom: 50px;
-	line-height: 24px;
-}
-
-.PortfolioPicture{
-	/*border: 1px solid pink;*/
-	width: 75%;
-	/*padding-left: 75%;*/
-}
-
-.PortfolioPicture img{
-	/*border: 1px solid pink;*/
-	height: 100%;
-	max-width: 450px;}
-
-
-.PortfolioDescription{
-	/*border: 1px solid pink;*/
-	width: 55%;
-	text-align: left;
-	overflow-wrap: break-word;
-}
-
-.ActivityTitle{
-	border-bottom: 1px solid white;
-}
-
-#openProject{
-	background-color: #24a0ed;
-	border-radius: 10px;
-}
-
-/*when you change the tab size to these pixels it would transform 
-the button to these specifiations 
-@media screen and (min-width: 780px){ /*describes tablet size and half webpage
-.resume-button{ 
-	width: 20px;
-	height: 10px;
-	transition:800ms ease all;
-	
-}*/
-
