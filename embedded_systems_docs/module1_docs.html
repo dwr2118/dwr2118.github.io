@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems Documentation</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #00ff99;
+        }
+        p, li {
+            font-size: 1.2em;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #00ff99;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border: 2px solid #00ff99;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #00ff99;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffcc00;
+        }
+        .screenshot {
+            margin-top: 20px;
+        }
+        .text-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 1px solid #00ff99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Embedded Systems Documentation</h1>
+
+        <h2>Introduction</h2>
+        <p>This document describes the features of the embedded system, including video demonstrations, images, and code snippets.</p>
+
+        <h2>System Overview</h2>
+        <p>Here’s a brief overview of the system's architecture:</p>
+        <pre><code>
+// Example embedded code snippet
+void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1000);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(1000);
+}
+        </code></pre>
+
+        <h2>Video Demonstration</h2>
+        <video controls>
+            <source src="demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Screenshots</h2>
+        <div class="screenshot">
+            <h3>System Interface Screenshot</h3>
+            <img src="screenshot.png" alt="System Interface Screenshot">
+        </div>
+
+        <h2>Text Box Example</h2>
+        <div class="text-box">
+            <p>This is a highlighted text box for important information or notes. You can use this box to emphasize certain parts of your documentation.</p>
+        </div>
+
+        <h2>Images</h2>
+        <img src="circuit_diagram.jpg" alt="Circuit Diagram">
+
+        <h2>Conclusion</h2>
+        <p>This concludes the basic documentation of the embedded system. Please refer to the full manual for detailed information.</p>
+    </div>
+</body>
+</html>
