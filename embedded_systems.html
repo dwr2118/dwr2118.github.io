@@ -4,51 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded Systems Documentation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        // Function to toggle between dark and light mode
-        function toggleTheme() {
-            const body = document.body;
-            body.classList.toggle('light-mode');
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-
-        // Function to automatically generate Table of Contents
-        window.onload = function() {
-            const toc = document.getElementById('toc');
-            const headings = document.querySelectorAll('h1, h2, h3');
-            headings.forEach((heading, index) => {
-                const anchor = document.createElement('a');
-                const id = 'heading-' + index;
-                heading.setAttribute('id', id);
-                anchor.setAttribute('href', '#' + id);
-                anchor.textContent = heading.textContent;
-                const li = document.createElement('li');
-                li.appendChild(anchor);
-                toc.appendChild(li);
-            });
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
-    </script>
+        h1, h2, h3 {
+            color: #00ff99;
+        }
+        p, li {
+            font-size: 1.2em;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #00ff99;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border: 2px solid #00ff99;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #00ff99;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffcc00;
+        }
+        .screenshot {
+            margin-top: 20px;
+        }
+        .text-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 1px solid #00ff99;
+        }
+    </style>
 </head>
 <body>
-    <div class="theme-toggle" onclick="toggleTheme()">
-        <img src="toggle_icon.png" alt="Toggle Theme">
-    </div>
-    
     <div class="container">
-        <div class="toc-container">
-            <h3>Table of Contents</h3>
-            <ul id="toc"></ul>
-        </div>
+        <h1>Embedded Systems Documentation</h1>
 
-        <div class="content">
-            <h1>Embedded Systems Documentation</h1>
+        <h2>Introduction</h2>
+        <p>This document describes the features of the embedded system, including video demonstrations, images, and code snippets.</p>
 
-            <h2>Introduction</h2>
-            <p>This document describes the features of the embedded system, including video demonstrations, images, and code snippets.</p>
-
-            <h2>System Overview</h2>
-            <p>Here’s a brief overview of the system's architecture:</p>
-            <pre><code>
+        <h2>System Overview</h2>
+        <p>Here’s a brief overview of the system's architecture:</p>
+        <pre><code>
 // Example embedded code snippet
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
@@ -60,31 +79,30 @@ void loop() {
     digitalWrite(LED_BUILTIN, LOW);
     delay(1000);
 }
-            </code></pre>
+        </code></pre>
 
-            <h2>Video Demonstration</h2>
-            <video controls>
-                <source src="demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <h2>Video Demonstration</h2>
+        <video controls>
+            <source src="demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-            <h2>Screenshots</h2>
-            <div class="screenshot">
-                <h3>System Interface Screenshot</h3>
-                <img src="screenshot.png" alt="System Interface Screenshot">
-            </div>
-
-            <h2>Text Box Example</h2>
-            <div class="text-box">
-                <p>This is a highlighted text box for important information or notes. You can use this box to emphasize certain parts of your documentation.</p>
-            </div>
-
-            <h2>Images</h2>
-            <img src="circuit_diagram.jpg" alt="Circuit Diagram">
-
-            <h2>Conclusion</h2>
-            <p>This concludes the basic documentation of the embedded system. Please refer to the full manual for detailed information.</p>
+        <h2>Screenshots</h2>
+        <div class="screenshot">
+            <h3>System Interface Screenshot</h3>
+            <img src="screenshot.png" alt="System Interface Screenshot">
         </div>
+
+        <h2>Text Box Example</h2>
+        <div class="text-box">
+            <p>This is a highlighted text box for important information or notes. You can use this box to emphasize certain parts of your documentation.</p>
+        </div>
+
+        <h2>Images</h2>
+        <img src="circuit_diagram.jpg" alt="Circuit Diagram">
+
+        <h2>Conclusion</h2>
+        <p>This concludes the basic documentation of the embedded system. Please refer to the full manual for detailed information.</p>
     </div>
 </body>
 </html>
