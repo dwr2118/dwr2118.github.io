@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 1 Documentation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title> Diego's Module 1 Docs </title>
     <style>
         body {
             background-color: #1e1e1e;
@@ -22,7 +25,7 @@
             color: #00ff99;
         }
         p, li {
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
         img {
             width: 100%;
@@ -60,49 +63,104 @@
 </head>
 <body>
     <div class="container">
-        <h1>Module 1 Design Documentation</h1>
+        <h1>
+            Module 1 Design Documentation: Generative Art
+        </h1>
+        <p><i>Diego Rivas Lazala</i></p>
 
-        <h2>Introduction</h2>
-        <p>This document describes the features of the embedded system, including video demonstrations, images, and code snippets.</p>
+        <h2>Vision🖼️</h2>
+        <p>
+            The initial goal of my artistic vision was to paint a fall theme using generative art as a set of painter's tools. 
+            Almost immediately, I thought of how busy my fall semester has started and I wanted to recreate something that embodied 
+            that experience of clearing your notifications momentarily. I wanted to create a piece that was both calming and chaotic.
+            Chaos would erupt when those notifications jumped back up. 
+        </p>
+        
+        <h2>Design Choices🎨</h2>
+        <p>
+            An important design choice started with drawing inspiration from ChatGPT's attempting at 
+            recreating my vision. I wanted to learn more about how animations worked programtically 
+            and requested one of the simplest animations that came to mind: raining items with 
+            a changing background. This request also gave me an idea on how to iterate as I figured out the 
+            best way to fulfill my artistic vision. <br><br>
 
-        <h2>System Overview</h2>
-        <p>Here’s a brief overview of the system's architecture:</p>
-        <pre><code>
-// Example embedded code snippet
-void setup() {
-    pinMode(LED_BUILTIN, OUTPUT);
-}
+            The first item that rained from the top of the screen were triangles of differing colors, so I can
+            get my bearings on how to translate code into art. <br><br>
 
-void loop() {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(1000);
-}
-        </code></pre>
+            The next iteration of the vision was to include a changing image in the background so I can 
+            learn how to layer items on top of each other while taking into consideration timing. <br><br>
 
-        <h2>Video Demonstration</h2>
-        <video controls>
-            <source src="demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+            Needless to say, I got carried away playing with the basics that I started
+            running low on time. This is when my vision changed to a more concrete piece with the goal 
+            of recreating time-based animated desktops screensavers, but they were more relatable. 
+            Like watching leaves fall as you chat with friends on a warm fall day. Afterwards, 
+            my vision's goal shifted to providing a window for students who might not be aware to what's 
+            happening outside of the purview of their computer. These things included the weather,
+            time, diseases and many others. <br><br>
 
-        <h2>Screenshots</h2>
-        <div class="screenshot">
-            <h3>System Interface Screenshot</h3>
-            <img src="screenshot.png" alt="System Interface Screenshot">
+            I was able to accomplish the goal of representing time, weather and diseases in my piece. 
+            Time was represented by the progression out of fall, into sick season and then into winter. 
+            I attempted to represent the weather by changing the background to reflect the time outside
+            and different items were animated such that they fell from the top of the screen to the bottom.
+            For the fall season where some sun light can be scavenged, there are red leaves dropping from the
+            metaphorical top of the screen. For the sick season, there are green viruses that fall from the top. 
+            Lastly as winter approaches and you are at Columbia, you find yourself missing the snow while you 
+            hold the same view of butler's ceiling for hours on end. <br><br>
+
+            The sprinkle on top of this <b>attempt</b> at fulfilling my vision was an email icon
+            with a notification badge. This was such a symbol that I constructed it from a simple red circle,
+            decreasing white text and a particular position on the screen. Now, look. Digest. See below.<br><br>
+
+            This final execution was supposed to iterate through the various seasons, which would naturally occur
+            over a longer period of time. For display purposes, I shortened the transition between the seasons
+            and the repo holds some advice on how to tweak the duration of each season. 
+        </p>
+
+        <h2>Results🏁</h2>
+        <div class="row">
+
+            <div class="col-md-6">
+                <p> A sped-up version of the piece: </p> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A6xxoiaPSKI?si=PpXoacrMeb5vrnz0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-6">
+                <p>The piece within the installation: </p> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UQbOWfWGEt8?si=uLvjpaeLBL98NOqs%&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
         </div>
+        
+        <h2>Bumps In The Road🚧</h2>
+        <p>
+            One major bump that I faced was getting started. I felt like there were various ideas I could've latched onto and 
+            attempted to execute. This served as a major reason as to why I turned to ChatGPT, thus resulting in inspiration to
+            understand what's programatically possible and make initial steps towards some vision. <br><br>
 
-        <h2>Text Box Example</h2>
-        <div class="text-box">
-            <p>This is a highlighted text box for important information or notes. You can use this box to emphasize certain parts of your documentation.</p>
-        </div>
+            Ever since I started tinkering with the code, I was unable to cleanly display images utilizing the pushImage()
+            function defined within the TFT_eSPI and SPI libraries. It would either display an something that resembled tv static
+            and there was a slight outline of the intended image in the foreground. Many tinkering fits later, I decided to
+            utilize a library that would intake JPEG images and display them on the screen reliably: TJpg_Decoder. <br><br>
 
-        <h2>Images</h2>
-        <img src="circuit_diagram.jpg" alt="Circuit Diagram">
+            For the motion required for each animation, I depended on the sprites within the TFT_eSPI library since they 
+            allowed for more specific controls over the icons on the screen. Beforehand, I was just generating 
+            triangles using some interesting math and the fillTriangle() function. But this served too difficult to 
+            debug and there was a convenient sprite tutorial that was sent by our professor. In search of the tinker, 
+            I spent sometime learning the fundamentals of sprite motion and treating them as objects. <br><br>
+        </p>
 
-        <h2>Conclusion</h2>
-        <p>This concludes the basic documentation of the embedded system. Please refer to the full manual for detailed information.</p>
+        <h2> Nitty Gritty?💻</h2>
+        <p> Want to try for yourself? Refer to the GitHub repo.</p>
+
+        <h2>Closing Thoughts🤔💭</h2>
+        <p>
+            This project has helped me build a profund appreciation for people who sit down and help turn text into art. 
+            Whether it be the art-enabling libraries or the people taking the time to transform code within an IDE into 
+            machine readable code, my deepest thanks go out to them. As I pondered what I would include in this design
+            documentation, the idea of making some sort of physical presentation of the pomodoro method--away from your 
+            ringing apple-shaped clocks. Need something to interactive with during the breaks....egh...might build it<br><br>
+            <br><br>
+        </p>
     </div>
 </body>
 </html>
